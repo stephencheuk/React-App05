@@ -1,0 +1,7 @@
+[
+  {"ID": 1, "Code": "C1", "ContactName": "May", "Company": "May Limited", "Tel": "111"},
+  {"ID": 2, "Code": "C2", "ContactName": "Sam", "Company": "Sam Limited", "Tel": "222"},
+  {"ID": 3, "Code": "C3", "ContactName": "John", "Company": "John Limited", "Tel": "333"},
+  {"ID": 4, "Code": "C4", "ContactName": "Stephen", "Company": "Stephen Limited", "Tel": "444"},
+  {"ID": 5, "Code": "C5", "ContactName": "Susan", "Company": "Susan Limited", "Tel": "555"}
+]

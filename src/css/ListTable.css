@@ -1,0 +1,22 @@
+.ListTabe-Panel{
+  margin-bottom: 20px;
+  background-color: #fff;
+  /*border: 1px solid transparent;*/
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+},
+
+.ListTabe-Panel-1st{
+  border-color: #337ab7;
+}
+
+.ListTabe-Panel-1st > .panel-heading{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.ListTable-Panel .panel-body > row:hover {
+  background-color: #f0f0f0;
+}
