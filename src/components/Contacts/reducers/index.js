@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import contactReducers from './contacts'
-import filter from './filter'
+//import filter from './filter'
 
 const contactApp = combineReducers({
   contacts : contactReducers

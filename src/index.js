@@ -2,8 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// Needed for onTouchTap
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import muiTheme from './index_material_ui_customize';
+
 import './index.css';
- 
+import './index_material_ui_customize.css';
+
 import { Provider } from 'react-redux'
 //import { createStore } from 'redux'
 //import todoApp from './components/Todo/reducers'
@@ -43,9 +53,13 @@ import MyRoute from './Routes_LoginLogout';
 //let store = createStore(todoApp)
 import createStore from './store'
 
+injectTapEventPlugin();
+
 ReactDOM.render(
   <Provider store={createStore()}>
-    <MyRoute />
+    <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+      <MyRoute />
+    </MuiThemeProvider>
   </Provider>
   ,
   document.getElementById('root')

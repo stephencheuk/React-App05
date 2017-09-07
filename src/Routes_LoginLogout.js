@@ -55,6 +55,7 @@ class MyRoute extends Component {
               <li><NavLink to="/todo">Todo</NavLink></li>
               <li><NavLink to="/login">Login</NavLink></li>
               <li><NavLink to="/contacts">Contacts</NavLink></li>
+              <li><NavLink to="/muis">Material UI Example Page</NavLink></li>
             </ul>
           </div>
 
@@ -81,6 +82,12 @@ class MyRoute extends Component {
             <Route path="/contacts" component={
               asyncRoute( () => import('./components/Contacts'),
                           () => import('./components/Contacts/reducers')
+                )
+            }/>
+
+            <Route path="/muis" component={
+              asyncRoute( () => import('./components/Muis'),
+                          () => import('./components/Muis/reducers')
                 )
             }/>
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class ContactsList extends Component {
 
@@ -45,6 +46,7 @@ class ContactsList extends Component {
       <div className="container">
         <h1 bsStyle='test'>Contacts</h1>
         <button onClick={this.props.fetchContacts}>Reload Data</button>
+        <RaisedButton onClick={this.props.fetchContacts} label="Reload Data" />
         <ul className="list-group">
           { this.renderContacts(contacts) }
         </ul>

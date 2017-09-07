@@ -1,4 +1,5 @@
 import { isPlainObject } from 'lodash'
+import 'babel-polyfill';
 
 export const STORE_INJECT = Symbol('@@STORE_INJECT')
 
